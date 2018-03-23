@@ -1,0 +1,15 @@
+---
+declared-services:
+  Conversation-2p:
+    label: conversation
+    plan: free
+applications:
+- name: chatbot-bela-krajina
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1
+  services:
+  - Conversation-2p
+  env:
+    NPM_CONFIG_PRODUCTION: false
