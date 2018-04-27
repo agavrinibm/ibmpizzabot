@@ -10,6 +10,6 @@ applications:
   memory: 256M
   instances: 1
   services:
-  - Conversation-2p
+  - my-assistant-service
   env:
     NPM_CONFIG_PRODUCTION: false
